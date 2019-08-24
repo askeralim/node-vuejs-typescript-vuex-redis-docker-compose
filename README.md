@@ -26,6 +26,10 @@ npm install
 npm run serve
 ```
 #### Running Application Screen:
+The application can be accessed with link
+```
+http://localhost:8080
+```
 ![Running Application Screen](https://github.com/askeralim/node-vuejs-typescript-vuex-redis-docker-compose/blob/master/Screen.JPG)
 #### Project 2: Deploy the VueJs ChatApp in Docker container
 Working on it, have some TypeScript Bugs need to be fixed.
