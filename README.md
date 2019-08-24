@@ -25,6 +25,8 @@ Run the vuejs application in one termins with following command.
 npm install
 npm run serve
 ```
+Running Application Screen:
+![Running Application Screen](https://github.com/askeralim/node-vuejs-typescript-vuex-redis-docker-compose/blob/master/Screen.JPG)
 #### Project 2: Deploy the VueJs ChatApp in Docker container
 Working on it, have some TypeScript Bugs need to be fixed.
 
