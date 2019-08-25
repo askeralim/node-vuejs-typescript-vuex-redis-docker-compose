@@ -8,13 +8,14 @@ git clone https://github.com/askeralim/node-vuejs-typescript-vuex-redis-docker-c
 ```
 ### Projects
 #### Project 1: ChatApp  
-A Complete Vuejs+vuex with socket.io ChatApplication developed, backend run by node.js with Redis server[Docker implementation is pending]
-To run this application it have two node project running in localhost (STill in Development mode, SOme typescript bugs need to be fixed.) 
+A Complete Vuejs+vuex with socket.io ChatApplication developed, backend run by node.js with Redis server
+To run this application it have two node project running in localhost (Still in Development mode, Some typescript bugs need to be fixed.) 
 
 [ChatApp-Server](https://github.com/askeralim/node-vuejs-typescript-vuex-redis-docker-compose/tree/master/chatapp-vue-server) 
 Run the server in one termins with following command.
 ### Server Running Command
 ```
+cd chatapp-vue-server
 npm install
 npm run start
 ```
@@ -22,6 +23,7 @@ npm run start
 Run the vuejs application in one termins with following command.
 ### Client Running Command
 ```
+cd chatapp-vue
 npm install
 npm run serve
 ```
@@ -34,3 +36,27 @@ http://localhost:8080
 #### Project 2: Deploy the VueJs ChatApp in Docker container
 Working on it, have some TypeScript Bugs need to be fixed.
 
+The Application is available @ (https://github.com/askeralim/node-vuejs-typescript-vuex-redis-docker-compose/tree/master/chatapp-vue-docker-compose)
+
+```
+cd chatapp-vue-docker-compose
+docker-compose -f dev.docker-compose.yml build
+```
+#### Build the docker images using following command
+```
+docker-compose -f dev.docker-compose.yml build
+```
+#### Run the application using Docker-Compose
+```
+docker-compose -f dev.docker-compose.yml up
+```
+It will run 4 Docker Images
+1. Redis Server
+2. NGINX Server listening port 80
+3. Client - Vue Application
+4. Server - Node.js Server Application
+
+The application can be accessed with link
+```
+http://localhost/
+```
