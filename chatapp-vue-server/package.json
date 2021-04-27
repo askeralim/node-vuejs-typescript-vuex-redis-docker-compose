@@ -21,7 +21,7 @@
     "express": "^4.17.1",
     "jsonpack": "^1.1.5",
     "node-redis-pubsub": "^4.0.0",
-    "redis": "^2.8.0",
+    "redis": "^3.1.1",
     "socket.io": "^2.2.0",
     "uuid": "^3.3.2"
   },
